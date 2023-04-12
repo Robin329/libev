@@ -400,7 +400,7 @@
 #endif
 #endif
 
-#if 0 /* debugging */
+#if 1 /* debugging */
 #define EV_VERIFY 3
 #define EV_USE_4HEAP 1
 #define EV_HEAP_CACHE_AT 1
@@ -4300,7 +4300,6 @@ int ev_run(EV_P_ int flags)
 				postfork = 1;
 			}
 #endif
-
 #if EV_FORK_ENABLE
 		/* we might have forked, so queue fork handlers */
 		if (ecb_expect_false(postfork))
